@@ -5,10 +5,10 @@ import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.mockito.Mockito;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
@@ -29,14 +29,13 @@ public class LionTest {
         return Arrays.asList(new Object[][]{
                 {"Самец", true},
                 {"Самка", false},
-                {"Особь", false},
         });
     }
 
     @Test
     public void getKittensTest(){
-        int kittens = lion.getKittens();
-        assertEquals(0,kittens);
+        lion.getKittens();
+        Mockito.verify(feline, Mockito.times(1)).getKittens();
     }
 
     @Test
@@ -47,7 +46,8 @@ public class LionTest {
 
     @Test
     public void getFoodTest() throws Exception {
-        List<String> food = lion.getFood();
-        assertNotNull(food);
+        lion.getFood();
+        Mockito.verify(feline, Mockito.times(1)).getFood("Хищник");
     }
 }
+

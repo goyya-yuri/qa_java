@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html id="htmlId">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251"> 
   <title>Coverage Report > Lion</title>
   <style type="text/css">
     @import "../../css/coverage.css";
@@ -98,12 +98,12 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;
 <b class="fc">&nbsp;    public Lion(Feline feline, String sex) throws Exception {</b>
 <b class="fc">&nbsp;        this.feline = feline;</b>
-<b class="fc">&nbsp;        if (&quot;РЎР°РјРµС†&quot;.equals(sex)) {</b>
+<b class="fc">&nbsp;        if (&quot;Самец&quot;.equals(sex)) {</b>
 <b class="fc">&nbsp;            hasMane = true;</b>
-<b class="fc">&nbsp;        } else if (&quot;РЎР°РјРєР°&quot;.equals(sex)) {</b>
+<b class="fc">&nbsp;        } else if (&quot;Самка&quot;.equals(sex)) {</b>
 <b class="fc">&nbsp;            hasMane = false;</b>
 &nbsp;        } else {
-<b class="fc">&nbsp;            throw new Exception(&quot;РСЃРїРѕР»СЊР·СѓР№С‚Рµ РґРѕРїСѓСЃС‚РёРјС‹Рµ Р·РЅР°С‡РµРЅРёСЏ РїРѕР»Р° Р¶РёРІРѕС‚РЅРѕРіРѕ - СЃР°РјРµС† РёР»Рё СЃР°РјРєР°&quot;);</b>
+<b class="fc">&nbsp;            throw new Exception(&quot;Используйте допустимые значения пола животного - самец или самка&quot;);</b>
 &nbsp;        }
 &nbsp;    }
 &nbsp;
@@ -117,7 +117,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;    }
 &nbsp;
 &nbsp;    public List&lt;String&gt; getFood() throws Exception {
-<b class="fc">&nbsp;        return feline.getFood(&quot;РҐРёС‰РЅРёРє&quot;);</b>
+<b class="fc">&nbsp;        return feline.getFood(&quot;Хищник&quot;);</b>
 &nbsp;    }
 &nbsp;}
 </code>
@@ -143,7 +143,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2024-09-15 02:48</div>
+    <div style="float:right;">generated on 2024-09-18 02:39</div>
 </div>
 </body>
 </html>

@@ -5,10 +5,7 @@ import com.example.Feline;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
 
 public class CatTest {
@@ -22,6 +19,7 @@ public class CatTest {
 
     @Test
     public void getFoodTest() throws Exception {
-        assertEquals(List.of(),cat.getFood());
+        cat.getFood();
+        Mockito.verify(feline, Mockito.times(1)).eatMeat();
     }
 }

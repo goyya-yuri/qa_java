@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html id="htmlId">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251"> 
   <title>Coverage Report > Animal</title>
   <style type="text/css">
     @import "../../css/coverage.css";
@@ -94,17 +94,17 @@ Current scope:     <a href="../../index.html">all classes</a>
 <b class="fc">&nbsp;public class Animal {</b>
 &nbsp;
 &nbsp;    public List&lt;String&gt; getFood(String animalKind) throws Exception {
-<b class="pc">&nbsp;        if (&quot;РўСЂР°РІРѕСЏРґРЅРѕРµ&quot;.equals(animalKind)) {</b>
-<b class="nc">&nbsp;            return List.of(&quot;РўСЂР°РІР°&quot;, &quot;Р Р°Р·Р»РёС‡РЅС‹Рµ СЂР°СЃС‚РµРЅРёСЏ&quot;);</b>
-<b class="pc">&nbsp;        } else if (&quot;РҐРёС‰РЅРёРє&quot;.equals(animalKind)) {</b>
-<b class="fc">&nbsp;            return List.of(&quot;Р–РёРІРѕС‚РЅС‹Рµ&quot;, &quot;РџС‚РёС†С‹&quot;, &quot;Р С‹Р±Р°&quot;);</b>
+<b class="pc">&nbsp;        if (&quot;Травоядное&quot;.equals(animalKind)) {</b>
+<b class="nc">&nbsp;            return List.of(&quot;Трава&quot;, &quot;Различные растения&quot;);</b>
+<b class="pc">&nbsp;        } else if (&quot;Хищник&quot;.equals(animalKind)) {</b>
+<b class="fc">&nbsp;            return List.of(&quot;Животные&quot;, &quot;Птицы&quot;, &quot;Рыба&quot;);</b>
 &nbsp;        } else {
-<b class="nc">&nbsp;            throw new Exception(&quot;РќРµРёР·РІРµСЃС‚РЅС‹Р№ РІРёРґ Р¶РёРІРѕС‚РЅРѕРіРѕ, РёСЃРїРѕР»СЊР·СѓР№С‚Рµ Р·РЅР°С‡РµРЅРёРµ РўСЂР°РІРѕСЏРґРЅРѕРµ РёР»Рё РҐРёС‰РЅРёРє&quot;);</b>
+<b class="nc">&nbsp;            throw new Exception(&quot;Неизвестный вид животного, используйте значение Травоядное или Хищник&quot;);</b>
 &nbsp;        }
 &nbsp;    }
 &nbsp;
 &nbsp;    public String getFamily() {
-<b class="nc">&nbsp;        return &quot;РЎСѓС‰РµСЃС‚РІСѓРµС‚ РЅРµСЃРєРѕР»СЊРєРѕ СЃРµРјРµР№СЃС‚РІ: Р·Р°СЏС‡СЊРё, Р±РµР»РёС‡СЊРё, РјС‹С€РёРЅС‹Рµ, РєРѕС€Р°С‡СЊРё, РїСЃРѕРІС‹Рµ, РјРµРґРІРµР¶СЊРё, РєСѓРЅСЊРё&quot;;</b>
+<b class="nc">&nbsp;        return &quot;Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи&quot;;</b>
 &nbsp;    }
 &nbsp;}
 </code>
@@ -130,7 +130,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2024-09-15 02:48</div>
+    <div style="float:right;">generated on 2024-09-18 02:39</div>
 </div>
 </body>
 </html>
